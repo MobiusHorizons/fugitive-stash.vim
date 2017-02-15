@@ -1,4 +1,4 @@
-# fugitive-gitlab.vim
+# fugitive-stash.vim
 
 fugitive.vim is undoubtedly the best Git wrapper of all time.
 
