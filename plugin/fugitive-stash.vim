@@ -66,7 +66,7 @@ function! s:stash_fugitive_handler(opts, ...)
         return ''
     endif
 
-    let repo = substitute(repo, '^\('.domain_pattern.'\)/\([-A-Za-z0-9]\+\)/\([-A-Za-z0-9]\+\)$', '\1/projects/\U\2\e/repos/\3', '')
+    let repo = substitute(repo, '^\('.domain_pattern.'\)\/\(\w\+\)\/\(\w\+\)$', '\1\/projects\/\2\/repos\/\3', '')
 
     " look for http:// + repo in the domains array
     " if it exists, prepend http, otherwise https
